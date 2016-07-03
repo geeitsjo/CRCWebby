@@ -1,0 +1,113 @@
+homeNavCSS ANd HTML:
+
+<body>
+	<div id="home">
+		<nav class="nav">
+			<img src="png/crcLogo.png" class="logo">
+			<ul>
+		    <li>Wellington CRC</li>
+			<li><a class="active" href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><div class="dropdown">
+				    <a href="services.html" class="dropbtn">Ministries</a>
+					    <div class="dropdown-content">
+					      <a href="http://www.wellingtoncrc.org/downloads">Downloads</a>
+					      <a href="http://www.wellingtoncrc.org/newsletter">Newsletters</a>
+					       <a href="pray.html">Prayer Requests</a>
+					      <a href="http://www.wellingtoncrc.org/downloads/leader-resources">Resources</a>
+					      <a href="http://www.wellingtoncrc.org/sermons">Sermons</a>
+					    </div>
+	  			</div>
+	  		</li>
+			<li><a href="services.html"></a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			</ul>
+		</nav> <!-- navigation end -->
+
+
+		.nav	{
+		color: black; /* Wellington CRC WORD */
+		/*box-shadow: 0px 0px 30px 1px #000000;*/
+		font-family: crcFont;
+		font-weight: bold;
+		position: fixed;
+		height: 40px; /* SIZE OF nav box */
+		width: 100%;
+		}
+
+.nav:hover{
+		background-color: white;
+		opacity: 0.9;
+		}
+		
+.nav ul	{
+		list-style-type: none;
+		margin: 0.8% 8%;
+		padding-top: 3px; 
+		}
+		
+.nav ul li	{
+		display: inline;
+		letter-spacing: 3px;
+		margin: 10px;
+		padding: 15px;
+		}	
+
+/* NAVBAR TEXT*/
+
+.nav ul li a:link, a:visited, .dropbtn	{
+		color: black;
+		text-align: center;
+		font-family: navFont;
+		text-decoration: none;
+		text-transform: uppercase;
+		}
+		
+/* NAVBAR HOVER TEXT */
+.nav ul li a:hover:not(.active), .dropdown:hover .dropbtn{
+		opacity: 0.3;		}
+
+.nav ul li a.active{
+	color: black;
+	border-bottom: 2px solid #a0443c;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* NAVBAR Little line */
+#header	{
+		border-right: 2px solid #621a4b;
+		padding-right: 30px;
+		}
+
+img.logo {
+	float: left; 
+	width: 23px;
+	display: inline;
+	margin-left: 115px;
+	margin-top: 4px;
+	margin-bottom: 4px; 	
+}

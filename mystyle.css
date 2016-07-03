@@ -1,0 +1,623 @@
+/* CONSTRUCTOR */
+html	{
+		width: 100%;
+		height: 100%;
+		}
+
+body	{
+		background-color: #FFFFFC;
+		color: black;
+		font-family: bodyFont;
+		font-size: 14px;
+		text-align: justify;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		}
+
+/*.........................................*/
+/* ------CLASSES && FONTS 
+/*.........................................*/
+#conts	{
+		padding-top: 50px;
+		}
+
+.container	{
+		margin: 2% 8%;
+		line-height: 20px;
+		}
+
+.conta	{
+		margin: 5% 4%; /* height * width*/
+		line-height: 20px;
+		}
+
+.twinBody {
+		background-image: url(backImages/diagonal_waves.png);
+		width: 100%;
+		height: 70%;
+		  }
+
+@font-face {
+   font-family: crcFont;
+   src: url(fonts/Gravity-Bold.ttf);
+}
+
+@font-face {
+   font-family: navFont;
+   src: url(fonts/Gravity-Light.ttf);
+}
+
+@font-face {
+   font-family: bodyFont;
+   src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+   font-family: subHead;
+   src: url(fonts/PorterBold.ttf);
+}
+
+@font-face {
+   font-family: sideFont;
+   src: url(fonts/Gravity-Bold.ttf);
+}
+   
+/*.........................................*/
+/* -----HOME NAVBAR */	
+/*.........................................*/		
+nav {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav:hover{
+        background-color: white;
+        opacity: 0.9;
+        }
+
+nav li {float: left;}
+
+nav li a {
+    display: block;
+    color: black;
+    font-family: navFont;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 35px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active), .dropdown:hover .dropbtn {
+		background-color: #89766a;}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+
+@media screen and (max-width: 800px){
+    nav li {float: none;}
+}
+
+/* WELLINGTON CRC TITLE */
+#header	{
+	padding-right: 2px;
+	display: inline-block;
+    font-family: crcFont;
+	font-weight: bold;
+	color: black; /* Wellington CRC WORD */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+		
+
+img.logo {
+	float: left; 
+	width: 23px;
+	display: inline;
+	margin-left: 115px;
+	margin-top: 4px;
+	margin-bottom: 4px; 	
+}
+
+/*.........................................*/
+/* -----Rest NAVBAR */
+/*.........................................*/
+ul.restNav {
+    list-style-type: none;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+	opacity: 0.95;
+	box-shadow: 0px 0px 30px 1px #000000;
+}
+
+ul.restNav li {float: left;}
+
+ul.restNav li a {
+    display: block;
+    color: black;
+    font-family: navFont;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 14px 35px;
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+ul.restNav li a:hover:not(.active) {
+		color: black;
+		border-bottom: 3px solid #a0443c;}
+
+ul.restNav li a.active {background-color: #89766a;}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+} 
+@media screen and (max-width: 993px){
+    ul.restNav li {float: none;}
+}
+
+
+
+
+
+/* ------------------------------------------ END CONSTRUCTOR */
+
+
+
+/*========================================*/	
+/* HOME IMAGE*/
+/*========================================*/	
+
+img.boss{
+	width: 100%;
+	height: 100%%;
+	display: inline;
+}
+
+#home	{
+		background-image: url(mainImages/homie.gif);
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}	
+
+/* OUTLINE OF TEXTBOX */
+#welc	{
+		border: 4px solid white;
+		text-align: center;
+		top: 67%;  /* x co-ordinate */	/* RE-CHEAK THIS!!!!!!! */	
+		color: white;
+		left: 1%;
+		line-height: 20px;
+		position: absolute;
+		width: 450px;
+		}
+
+#welc:hover{
+		background-color: #766a5e;
+		}
+
+#homeEvents{
+        background-image: url(mainImages/homie.gif);
+		background-position: center center;		
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+   		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}
+
+.cento{
+		text-align: center;
+		color: white;
+		position: absolute;
+		width: 100%;
+		display: block;
+		padding-top: 75px;
+		padding-bottom: 75px;      
+		background-color: #a18b7d;
+}
+
+img.prayImage { 
+	width: 15%;
+	height: 15%;
+	padding-top: 10px;
+	text-align: center;
+	display: inline-block;
+}
+
+/* .pr{
+position:relative;
+color: white;
+font-style: none;
+bottom:20px;
+left:0px;
+visibility: hidden;
+}
+
+.imgWrap:hover .pr{
+visibility: visible;
+}*/
+
+.prayImage:hover{
+			 opacity: 0.5;
+			}
+
+/* TEXT BOX IN HOMEPAGE*/
+span.white	{
+		color: white;
+		font-family: trebuchet MS;
+		font-size: 12px;
+		text-transform: uppercase;
+		}
+		
+span.i	{font-style: italic}
+
+/*========================================*/
+/* ABOUT */
+/* =========================================== */
+
+#imgblock	{
+		background-image: url(mainImages/about.jpg);
+		background-position: center center;		
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+   		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}
+
+h2	{
+		font-family: subHead;
+		letter-spacing: 2px;
+		margin: 10px 0px;
+		text-transform: uppercase;
+		}
+
+h3	{
+		font-family: subHead;
+		letter-spacing: 2px;
+		margin: 20px 0px;
+		text-transform: uppercase;
+		}
+
+h6{margin: 0px;
+	padding: 0px;
+
+}
+
+.h2-1	{margin-top: 0px}
+
+.cent	{text-align: center;}
+
+.middle	{background-color: #a18b7d}
+
+.who {	/*background-color: #a18b7d;*/
+		text-align: center;
+		color: black;
+		line-height: 20px;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		margin-right:100px; 
+		margin-left:100px;
+		text-align: justify;
+	 }	
+/* LEFT ARRAY SIZE*/
+.left	{
+		float: left;
+		width: 30%;
+		padding: 60px 3.3% 10px 10px; /*height, right, width, left*/
+		margin-bottom: 50px;
+		}
+
+/* LEFT ARRAY CONTENT */		
+#map	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		}
+		
+/* textbox on the left */
+#ff		{
+
+		border: 10px solid #a18b7d;
+		border-style: outset;
+		padding-top: 250px;
+		text-align: center;
+		padding: 0px 20px 20px; 
+		}
+		
+#ff	ul	{
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		}
+
+/* colours in left */
+span.q	{
+		color: #961830;
+		font-family: sideFont;
+		font-size: 14px;
+		text-transform: uppercase;
+		}
+		
+/* RIGHT ARRAY SIZE */
+.right	{
+		margin-top: 50px;
+		float: right;
+		margin-bottom: 50px;
+		width: 62%;
+		}
+
+.mapoR{
+		display: inline-block;
+		text-align: center;
+		padding-left: 150px;
+		top: 295%;  /* x co-ordinate */	/* RE-CHEAK THIS!!!!!!! */	
+		left: 50.50%;
+		line-height: 20px;
+		position: absolute;
+		width: 450px;
+}
+		
+/*========================================*/
+/* Ministry */
+/* =========================================== */
+.links	{
+		width: 100%;
+        background-color: white;
+		margin-top: 50px;
+		margin-bottom: 350px;
+		line-height: 0px;
+        text-align: center;
+    }
+		
+.links ul {
+		list-style-type: none;
+		margin: 0% 0%;
+		padding: 0px;
+		}
+		
+.links ul li {
+		display: inline;
+		letter-spacing: 3px;
+		margin: 10px; /* REVISE */
+		}	
+
+/*TEXT*/
+.links ul li a:link, a:visited	{
+		float: left;
+		font-family: navFont;
+		color: black;
+		text-decoration: none;
+		text-transform: uppercase;
+		}
+		
+/*HOVER TEXT */
+.links ul li a:hover	{
+		color: black;
+		opacity: 0.5;
+		}
+
+img.linkButtons { 
+	width: 5%;
+	height: 5%;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	display: inline;
+}
+
+.linkButtons:hover{
+			 opacity: 0.5;
+			}
+
+#imgblock1	{
+		background-image: url(mainImages/ministry.gif);
+		background-position: center center;		
+		background-repeat: no-repeat;
+		background-attachment: fixed;	
+		background-size: cover;
+		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}
+
+/*img.childM {
+	width: 100%;
+	height: 65%%;
+	display: inline;
+}*/
+
+img.matureM {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	width: 100%;
+	height: 85%%;
+	display: inline;
+}
+
+#young{
+		background-image: url(images/young.jpg);
+		background-position: center center;		
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+   		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}
+
+
+/*========================================*/
+/* Events */
+/* =========================================== */
+#imgblock2	{
+		background-image: url(mainImages/eventsy.gif);
+		background-position: center center;		
+		background-repeat: no-repeat;
+		background-attachment: fixed;	
+		background-size: cover;
+		width: 100%;
+    	height: 100%;
+    	position: relative; 
+		}
+
+/*img.timeline{
+	width: 100%;
+	height: auto;
+	display: inline;
+}*/
+
+img.ladies{
+	width:50%;
+	height:50%;
+	display: inline;
+	position: center; 
+}
+
+/*========================================*/
+/* PHOTO/VIDEO GALLERY (TABLE) */
+/* =========================================== */
+
+.h2-2	{
+		margin-top: 0px;
+		text-align: center;
+		}
+
+.img	{
+	    float: left;
+		width: 324px;
+		height: 216px;
+		border: 2px solid black;
+		padding: 15px;
+		margin: 10px;
+		opacity: 1;
+		}
+		
+/*.img:hover	{border: 2px solid #8b0f04;
+			 opacity: 0.5;
+			}*/
+
+/*========================================*/	
+/* Pray and Q&A*/
+/*========================================*/	
+
+.leftie	{
+		float: left;
+		width: 30%;
+		margin-bottom: 50px;
+		}
+
+.rightie {
+		float: right;
+		margin-bottom: 50px;
+		width: 62%;
+		padding: 0px 3.3% 0px 22px;
+		border-left: 3px solid black;
+}
+
+/*========================================*/
+/* FOOTER */
+/* =========================================== */
+
+footer	{
+		background-color: #89766a;
+		border-top: solid black;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		text-align: center;
+
+		}
+
+.boxy 	{text-align: center;
+		border: 4px solid #a18b7d;
+		padding: 10px;
+		clear: both;
+}
+
+.leftFoot	{
+		float: left;
+		margin-left: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 30%;
+		}
+
+.rightFoot	{
+		float: right;
+		width: 40%;
+		margin-right: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		}
+
+img.crcFoot { 
+	width: 4.5%;
+	height: 4.5%;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.crcFoot:hover { 
+	opacity: 0.3;
+}

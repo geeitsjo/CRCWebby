@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<title> WCRC </title>
+	<link rel="icon" type="image/png" href="png/crcLogo.png" >
+</head>
+
+<section id="home">
+	<nav class="nav">
+		<img src="png/crcLogo.png" class="logo">
+		<ul>
+	    <li id="header">Wellington CRC</li>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="services.html">Ministries</a></li>
+		<li><a href="events.html">Events</a></li>
+		<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav> <!-- navigation end -->
+</section> <!-- img block end -->
+
+	<!-- span welcome message -->
+<div id="welc">	
+	<dl class="white"> Hello and welcome to  Wellington CRC! Our focus is to become by grace what Christ is by nature. This means we are always encouraging people to grow and become a mature disciple of Jesus Christ. </dl> 
+</div> 
+
+<body>
+
+
+
+</body>
+
+</html>
